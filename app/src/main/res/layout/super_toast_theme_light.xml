@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/content_toast"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/camera_middle_frame_bg_theme_light"
+              android:orientation="horizontal"
+              tools:context=".SuperCustomToastActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/waring"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textSize="1dp"
+            tools:ignore="SpUsage"/>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textSize="5dp"
+            tools:ignore="SpUsage"/>
+    </LinearLayout>
+
+</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/content_toast"
+                android:layout_width="200dp"
+                android:layout_height="72dp"
+                android:background="@drawable/toast_bg">
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:foregroundGravity="center_vertical"
+        android:padding="6dp"
+        android:src="@mipmap/logo1"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/face"
+        android:paddingLeft="1dp"
+        android:text="TextView"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/groupMsg"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="mark"
+        android:textSize="18sp"/>
+</RelativeLayout>
